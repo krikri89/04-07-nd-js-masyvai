@@ -64,20 +64,45 @@ console.log('----4------');
 4.Sukurti masyvą, kurio ilgis 100, o reikšmės – raidės D, E, F, G, H. 20.
 */
 
-function multNum (arr4){
-    let output = [];
 
-    for (let x of arr4)
-        output.push(x * arr4.lenth);
-        return output
-}
-console.log(multNum(['D', 'E', 'F', 'G', 'H']));
+const arr5 = [];
+let str = 'DEFGH';
+let multiStr = str.repeat(20);
 
-
+console.log(Array.from(multiStr));
+console.log('---5----------');
 /*
 5.Sukurti masyvą, kurio ilgis 100, o reikšmės – raidės M,N,O,P. Suskaičiuoti, kurios raidės buvo daugiausia.
 */
 
+const arr6 = [];
+let str2 = 'MNOP';
+let multiStr2 = str2.repeat(25);
+console.log(Array.from(multiStr2));
+let count = 0;
+
+console.count(['M']);
+
+
+console.log('----6-------');
 /*
 6.Sugeneruoti masyvą, kurio ilgis 20, o reikšmės masyve turi būti nuo 10 iki 50. Reikšmės masyve turi būti unikalios, tai yra – nesikartoti.
 */
+let arr7 = [];
+ 
+for(let i=0; i <20; i++) {
+arr7.push(masyvas(10, 50))
+}
+function masyvas(min2, max2){
+    return Math.floor(Math.random()*(max2 - min2 +1)+min2)
+}
+console.log(arr7);
+
+console.log('---copy/paste ;)----');
+function uV(limit, totalV){
+    const uniqueValues = new Set();
+    do{uniqueValues.add(Number((Math.random()*limit).toFixed()))}
+    while (uniqueValues.size < totalV)
+    return Array.from(uniqueValues);
+}
+console.log(uV(50, 20));
