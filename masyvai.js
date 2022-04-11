@@ -79,9 +79,17 @@ const arr6 = [];
 let str2 = 'MNOP';
 let multiStr2 = str2.repeat(25);
 console.log(Array.from(multiStr2));
-let count = 0;
 
-console.count(['M']);
+let countM = 0;
+let countN = 0;
+let countO = 0;
+let countP = 0;
+
+for (let i=0; i<arr6.length; i++){
+    console.log(Math.max[arr6]);
+}
+console.log(Math.max(arr6));
+
 
 
 console.log('----6-------');
